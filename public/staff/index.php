@@ -19,6 +19,9 @@
             <li><a href=""></a></li> -->
         </ul>
     </navigation>
+    <section id="content">
+
+    </section>
     <footer>
         &copy; <?= date('Y') ?> Globe Bank.
     </footer>
