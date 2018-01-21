@@ -1,0 +1,3 @@
+<?php
+//This page loads all the functions, libraries, code snippets etc...
+require_once('functions.php');
