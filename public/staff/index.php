@@ -1,30 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GBI</title>
-    <link rel="stylesheet" media="" href="../stylesheets/staff.css">
-</head>
-<body>
-    <header>
-        <h1>GBI Staff Area</h1>
-    </header>
-    <navigation>
-        <ul>
-            <li><a href="index.php">Menu</a></li>
-            <!-- <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li> -->
-        </ul>
-    </navigation>
-    <section id="content">
+<!-- DO not use dynamic links here, only static strings as it introduces security vulnerabilities - here working with file system -->
+<?php require_once('../../private/initialize.php'); ?>
+<!-- We are including the header here as it is not dynamic - it is 'static'/re-usable -->
+<?php $page_title = 'Staff Menu'; ?>
+<?php include('../../private/shared/staff_header.inc.php'); ?>
+<!-- This allows us to define what is unique to this page with the section below -->
+<section id="content">
 
-    </section>
-    <footer>
-        &copy; <?= date('Y') ?> Globe Bank.
-    </footer>
-
-</body>
-</html>
+</section>
+<!-- We are including the footer here as it is not dynamic - it is 'static'/re-usable -->
+<?php include('../../private/shared/staff_footer.inc.php'); ?>
