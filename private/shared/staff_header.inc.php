@@ -11,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GBI - <?= $page_title ?></title>
-    <link rel="stylesheet" media="" href="../stylesheets/staff.css">
+    <!-- Defining a constant for the Web Root allows us to share the stylehseet among diff index.php locations -->
+    <link rel="stylesheet" media="" href="<?= url_for('/stylesheets/staff.css');?>">
 </head>
 <body>
     <header>
@@ -19,6 +20,7 @@
     </header>
     <navigation>
         <ul>
-            <li><a href="index.php">Menu</a></li>
+            <!-- We have a shared header file being used on multiple pages & we want to use relative links to differnet pages - we need to define a constant for the Web Root -->
+            <li><a href="<?= url_for('/staff/index.php'); ?>">Menu</a></li>
         </ul>
     </navigation>
