@@ -12,7 +12,7 @@
         <h2>Main Menu</h2>
         <ul>
             <!-- Used relative path instead of absolute path. Adding /before subjects says go from root to subjects... -->
-            <li><a href="subjects/index.php">Subjects</a></li>
+            <li><a href="<?= url_for('/staff/subjects/index.php') ?> ">Subjects</a></li>
         </ul>
     </div><!-- /END #main-content -->
 </section><!-- /END #content -->
